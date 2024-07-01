@@ -1,0 +1,1 @@
+alert http any any -> any any (msg:"FILE store apk"; fileext:"apk"; filestore; sid:1; rev:1;)

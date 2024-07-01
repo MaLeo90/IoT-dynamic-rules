@@ -1,0 +1,23 @@
+MODULE(tests)
+MODULE(pe)
+MODULE(elf)
+MODULE(math)
+MODULE(time)
+
+#ifdef DOTNET_MODULE
+MODULE(dotnet)
+#endif
+
+#ifdef CUCKOO_MODULE
+MODULE(cuckoo)
+MODULE(r2)
+MODULE(androguard)
+#endif
+
+#ifdef MAGIC_MODULE
+MODULE(magic)
+#endif
+
+#ifdef HASH_MODULE
+MODULE(hash)
+#endif
